@@ -39,8 +39,8 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>GangwonAll-Light.otf</string>
-		<string></string>
+		<string>fonts/GangwonEduAll OTFLight.otf</string>
+		<string>fonts/GangwonEduAll OTFBold.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

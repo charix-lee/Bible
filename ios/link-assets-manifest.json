@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/GangwonEduAll OTFBold.otf",
+      "sha1": "0ead940f24b5a6582a0f81a8c062488cb1aeda75"
+    },
+    {
+      "path": "assets/fonts/GangwonEduAll OTFLight.otf",
+      "sha1": "439b5a81da2fc6def393cfb29d914c5d9da39e60"
+    },
+    {
+      "path": "assets/fonts/GangwonEduHyeonokT OTF.otf",
+      "sha1": "038ab7f7a6780f34db06d3c08f2a1f9c4f551420"
+    },
+    {
+      "path": "assets/fonts/GangwonEduPower.otf",
+      "sha1": "1c15f826e2143c3292fd575c27b7842081f22e88"
+    },
+    {
+      "path": "assets/fonts/GangwonEduSaeeum OTF.otf",
+      "sha1": "72f9dbda9848e540ff7a183dbb37a9d526254d63"
+    }
+  ]
+}

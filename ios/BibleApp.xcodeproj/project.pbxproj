@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BibleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BibleAppTests.m */; };
+		01A9CEFFF79C464599349861 /* GangwonEduSaeeum OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 453810616D254E95ACD1C9DF /* GangwonEduSaeeum OTF.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-BibleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BibleApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-BibleApp-BibleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BibleApp-BibleAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C479746C29923C24008919FA /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = C479746B29923C23008919FA /* Fonts */; };
+		A459B9BBDD524ABCBD9795CC /* GangwonEduHyeonokT OTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E44A2744E9440E082F54FC8 /* GangwonEduHyeonokT OTF.otf */; };
+		C48BC145299389E20016F27B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = C48BC144299389E20016F27B /* fonts */; };
+		D38F7A52EFD1433F929DDDE0 /* GangwonEduAll OTFLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 161A4AC484F240C4BEEB45BF /* GangwonEduAll OTFLight.otf */; };
+		EAFEDAE168EF41818BDA70B3 /* GangwonEduPower.otf in Resources */ = {isa = PBXBuildFile; fileRef = 055062AC4A804DF9BBFC8464 /* GangwonEduPower.otf */; };
+		F468AFF23D50484F827661F7 /* GangwonEduAll OTFBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53033DF7DC0A4D22A0CB686E /* GangwonEduAll OTFBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +36,25 @@
 		00E356EE1AD99517003FC87E /* BibleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BibleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BibleAppTests.m; sourceTree = "<group>"; };
+		055062AC4A804DF9BBFC8464 /* GangwonEduPower.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = GangwonEduPower.otf; path = ../assets/fonts/GangwonEduPower.otf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BibleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BibleApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = BibleApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BibleApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BibleApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BibleApp/main.m; sourceTree = "<group>"; };
+		161A4AC484F240C4BEEB45BF /* GangwonEduAll OTFLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GangwonEduAll OTFLight.otf"; path = "../assets/fonts/GangwonEduAll OTFLight.otf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-BibleApp-BibleAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BibleApp-BibleAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-BibleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleApp.debug.xcconfig"; path = "Target Support Files/Pods-BibleApp/Pods-BibleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		453810616D254E95ACD1C9DF /* GangwonEduSaeeum OTF.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GangwonEduSaeeum OTF.otf"; path = "../assets/fonts/GangwonEduSaeeum OTF.otf"; sourceTree = "<group>"; };
+		53033DF7DC0A4D22A0CB686E /* GangwonEduAll OTFBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GangwonEduAll OTFBold.otf"; path = "../assets/fonts/GangwonEduAll OTFBold.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-BibleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleApp.release.xcconfig"; path = "Target Support Files/Pods-BibleApp/Pods-BibleApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-BibleApp-BibleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleApp-BibleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BibleApp-BibleAppTests/Pods-BibleApp-BibleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-BibleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BibleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BibleApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BibleApp-BibleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleApp-BibleAppTests.release.xcconfig"; path = "Target Support Files/Pods-BibleApp-BibleAppTests/Pods-BibleApp-BibleAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		C479746B29923C23008919FA /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		9E44A2744E9440E082F54FC8 /* GangwonEduHyeonokT OTF.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GangwonEduHyeonokT OTF.otf"; path = "../assets/fonts/GangwonEduHyeonokT OTF.otf"; sourceTree = "<group>"; };
+		C48BC144299389E20016F27B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../assets/fonts; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -118,13 +128,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				C479746B29923C23008919FA /* Fonts */,
+				C48BC144299389E20016F27B /* fonts */,
 				13B07FAE1A68108700A75B9A /* BibleApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BibleAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C9F0555CEAEC4D4C86794A54 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +160,18 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-BibleApp-BibleAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9F0555CEAEC4D4C86794A54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53033DF7DC0A4D22A0CB686E /* GangwonEduAll OTFBold.otf */,
+				161A4AC484F240C4BEEB45BF /* GangwonEduAll OTFLight.otf */,
+				9E44A2744E9440E082F54FC8 /* GangwonEduHyeonokT OTF.otf */,
+				055062AC4A804DF9BBFC8464 /* GangwonEduPower.otf */,
+				453810616D254E95ACD1C9DF /* GangwonEduSaeeum OTF.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +268,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C479746C29923C24008919FA /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F468AFF23D50484F827661F7 /* GangwonEduAll OTFBold.otf in Resources */,
+				D38F7A52EFD1433F929DDDE0 /* GangwonEduAll OTFLight.otf in Resources */,
+				A459B9BBDD524ABCBD9795CC /* GangwonEduHyeonokT OTF.otf in Resources */,
+				EAFEDAE168EF41818BDA70B3 /* GangwonEduPower.otf in Resources */,
+				01A9CEFFF79C464599349861 /* GangwonEduSaeeum OTF.otf in Resources */,
+				C48BC145299389E20016F27B /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
