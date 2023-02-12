@@ -4,12 +4,7 @@ import React from 'react';
 export const Header = ({ title }: { title: string }) => {
   return (
     <View style={styles.frame}>
-      <ScrollView
-        showsHorizontalScrollIndicator={false}
-        horizontal
-      >
-        <Text style={styles.text}>{title}</Text>
-      </ScrollView>
+      <Text style={styles.text}>{title}</Text>
     </View>
   );
 };
