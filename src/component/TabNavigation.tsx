@@ -1,51 +1,35 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Bible } from '../page/Bible';
+// import { createNativeStackNavigator } from 'react-native-screens/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 export const TabNavigation = () => {
-  const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator
-      screenOptions={{
-        headerTitleStyle: {
-          color: '#000',
-          fontFamily: 'spoqaBold',
-          fontSize: 18
-        },
-        headerTintColor: '#000',
-        headerShadowVisible: false
-      }}
-    >
-
-      <Tab.Screen
-        key={'screen-' + 'item.name'}
-        name={'item.name'}
-        component={Bible}
-        options={{
-          tabBarStyle: {
-            justifyContent: 'center',
-            alignItems: 'center',
-          },
-          headerShown: false,
-          tabBarLabelStyle: {
+    <>
+      <Stack.Navigator
+        initialRouteName="Bible"
+        screenOptions={{
+          headerTitleStyle: {
+            color: '#000',
             fontFamily: 'spoqaBold',
-            fontSize: 12,
-            lineHeight: 15,
-            justifyContent: 'center',
-            alignItems: 'center',
+            fontSize: 18,
           },
-          tabBarLabel: 'item.title',
-          // tabBarIcon: ({ focused }) => (
-          //   <>
-          //     {/*<item.Icon color={focused ? '#006AFF' : '#D1D6DA'}/>*/}
-          //   </>
-          // ),
-          tabBarIconStyle: {
-            justifyContent: 'center',
-            alignItems: 'center'
-          }
+          headerTintColor: '#000',
+          headerShadowVisible: false,
         }}
-      />
-    </Tab.Navigator>
+      >
+        <Stack.Screen
+          key={'screen-' + 'bible'}
+          name={'Bible'}
+          component={Bible}
+          options={{
+            headerShown: true,
+          }}
+        />
+      </Stack.Navigator>
+    </>
   );
 };

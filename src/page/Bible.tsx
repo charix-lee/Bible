@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {FixedHeader} from '../component/Header';
+import { FixedHeader } from '../component/Header';
 
 export const Bible = () => {
 
@@ -79,4 +79,4 @@ const styles = StyleSheet.create({
     // position: 'relative',
     flex: 1,
   },
-})
+});
