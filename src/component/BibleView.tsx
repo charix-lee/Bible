@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 import { Chang01 } from './Constant';
 
 export const BibleView = () => {
   return (
-    <View style={styles.frame}>
-      {Chang01.map((item, index) =>
+    <ScrollView style={styles.frame}>
+      {Chang01.map((item,) =>
         <Text style={styles.text}>{item}</Text>
       )}
-    </View>
+    </ScrollView>
   );
 };
 
