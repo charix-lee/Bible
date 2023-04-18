@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 import { Chang01 } from './Constant';
+import { getBibleList } from './utils/BibleService';
 
-export const BibleView = () => {
+export const BibleView = ({content}: {content: string[]}) => {
+  console.log(content)
   return (
     <ScrollView style={styles.frame}>
-      {Chang01.map((item,) =>
+      {content.map((item,) =>
         <Text style={styles.text}>{item}</Text>
       )}
     </ScrollView>

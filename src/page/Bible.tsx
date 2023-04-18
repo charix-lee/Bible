@@ -1,73 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { FixedHeader } from '../component/Header';
+import { BibleView } from '../component/BibleView';
+import { getBibleList } from '../component/utils/BibleService';
+import { Chang01 } from '../component/Constant';
 
 export const Bible = () => {
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    getBibleList().then((v: any) => setList(v));
+  });
 
   return (
-    <View style={styles.background}>
-      {/*<FixedHeader />*/}
-      <View style={{}}>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdㄴㄴㄴㄴㄴㄴㄴkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-        <Text>fjdfjdkjf</Text>
-      </View>
-      {/*<Header title="창세기 1장" />*/}
-      {/*<BibleView />*/}
-    </View>
+    <ScrollView style={styles.background}>
+      {/*<BibleView content={Chang01}/>*/}
+    </ScrollView>
   );
 };
 

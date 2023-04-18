@@ -1,8 +1,7 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Bible } from '../page/Bible';
-// import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Bible } from '../page/Bible';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,8 +13,8 @@ export const TabNavigation = () => {
         screenOptions={{
           headerTitleStyle: {
             color: '#000',
-            fontFamily: 'spoqaBold',
-            fontSize: 18,
+            fontFamily: 'GangwonEduAll-OTFBold',
+            fontSize: 20,
           },
           headerTintColor: '#000',
           headerShadowVisible: false,
