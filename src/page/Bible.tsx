@@ -8,12 +8,15 @@ import { Chang01 } from '../component/Constant';
 export const Bible = () => {
   const [list, setList] = useState([]);
   useEffect(() => {
-    getBibleList().then((v: any) => setList(v));
-  });
+    getBibleList().then((v: any) => {
+      setList(v);
+      console.log(v)
+    });
+  }, []);
 
   return (
     <ScrollView style={styles.background}>
-      {/*<BibleView content={Chang01}/>*/}
+      <BibleView content={Chang01}/>
     </ScrollView>
   );
 };

@@ -4,7 +4,6 @@ import { Chang01 } from './Constant';
 import { getBibleList } from './utils/BibleService';
 
 export const BibleView = ({content}: {content: string[]}) => {
-  console.log(content)
   return (
     <ScrollView style={styles.frame}>
       {content.map((item,) =>
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'GangwonEduAll-OTFLight',
     fontSize: 17,
-    color: 'balck',
+    color: 'black',
     lineHeight: 28,
     marginBottom: 15,
   },

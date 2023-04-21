@@ -2,6 +2,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { Bible } from '../page/Bible';
+import { BibleList } from './BibleList';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,14 +21,15 @@ export const TabNavigation = () => {
           headerShadowVisible: false,
         }}
       >
-        <Stack.Screen
-          key={'screen-' + 'bible'}
-          name={'Bible'}
-          component={Bible}
-          options={{
-            headerShown: true,
-          }}
-        />
+        <Stack.Screen name={'List'} component={BibleList}/>
+        {/*<Stack.Screen*/}
+        {/*  key={'screen-' + 'bible'}*/}
+        {/*  name={'Bible'}*/}
+        {/*  component={Bible}*/}
+        {/*  options={{*/}
+        {/*    headerShown: true,*/}
+        {/*  }}*/}
+        {/*/>*/}
       </Stack.Navigator>
     </>
   );
