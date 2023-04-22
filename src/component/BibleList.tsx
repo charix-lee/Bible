@@ -14,7 +14,7 @@ export const BibleList = () => {
   }, []);
 
   useEffect(() => {
-    console.log(list.find((v: any) => v.kr_long === bible).verse_count);
+    // console.log(list.find((v: any) => v.kr_long === bible).verse_count);
   }, [bible])
   return (
     <ScrollView style={{backgroundColor: 'white'}}>
@@ -32,7 +32,7 @@ export const BibleList = () => {
         <View>
           <View>
             <Text>장</Text>
-            <Text>{String(list.find((v: any) => v.kr_long === bible).verse_count)}</Text>
+            {/*<Text>{String(list.find((v: any) => v.kr_long === bible).verse_count)}</Text>*/}
           </View>
         </View>
       </View>
@@ -48,13 +48,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'black',
 
-    borderRightColor: 'black',
-
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
 
-    borderColor: 'rgba(100, 100, 100, 0.8)',
+    borderRightColor: 'rgba(100, 100, 100, 0.2)',
     borderRightWidth: 0.5,
     borderStyle: 'solid',
   },
@@ -74,7 +72,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 40,
 
-    borderColor: 'rgba(100, 100, 100, 0.8)',
+    borderColor: 'rgba(100, 100, 100, 0.2)',
     borderBottomWidth: 0.5,
     borderStyle: 'solid',
 
