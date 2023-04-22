@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
-import { Chang01 } from './Constant';
-import { getBibleList } from './utils/BibleService';
 
 export const BibleView = ({content}: {content: string[]}) => {
   return (

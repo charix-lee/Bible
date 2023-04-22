@@ -1,61 +1,103 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+
 import { getBibleList } from './utils/BibleService';
 
 export const BibleList = () => {
   const [list, setList] = useState<any>([]);
+  const [bible, setBible] = useState('창세기');
   useEffect(() => {
-    getBibleList().then((v: any) => setList(v));
-  });
+    getBibleList().then((v: any) => {
+      // console.log(v)
+      setList(v);
+    });
+  }, []);
+
+  useEffect(() => {
+    console.log(list.find((v: any) => v.kr_long === bible).verse_count);
+  }, [bible])
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: 'white'}}>
       <View>
         <View style={styles.bible}>
-          <Text style={styles.bible_title}>성경</Text>
+          <View style={styles.bible_title}>
+            <Text style={styles.bible_title_text}>성경</Text>
+          </View>
           {list.map((item: any, index: number) =>
-            <View style={{display: 'flex', flexDirection: 'column'}}>
-              <Text key={'bible_' + index} style={styles.bible_list}>{item.kr_long}</Text>
-              <View style={{borderColor: 'black', borderStyle: 'solid'}}/>
+            <View style={[styles.bible_list, item.kr_long === bible && styles.bible_list__selected]}>
+              <Text key={'bible_' + index} style={[styles.bible_list_text, item.kr_long === bible && styles.bible_list_text__selected]}>{item.kr_long}</Text>
             </View>
           )}
         </View>
+        <View>
+          <View>
+            <Text>장</Text>
+            <Text>{String(list.find((v: any) => v.kr_long === bible).verse_count)}</Text>
+          </View>
+        </View>
       </View>
     </ScrollView>
-
   );
 };
 
 const styles = StyleSheet.create({
   frame: {},
   bible: {
-    width: 200,
+    width: 216,
     fontFamily: 'GangwonEduAll-OTFLight',
     fontSize: 20,
     color: 'black',
 
     borderRightColor: 'black',
 
-    backgroundColor: 'red'
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    borderColor: 'rgba(100, 100, 100, 0.8)',
+    borderRightWidth: 0.5,
+    borderStyle: 'solid',
   },
   bible_title: {
     width: '100%',
-
-    backgroundColor: 'yellow',
+    height: 28,
 
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontFamily: 'GangwonEduAll-OTFLight'
+  },
+  bible_title_text: {
+    fontFamily: 'GangwonEduAll-OTFLight',
+    fontSize: 15,
   },
   bible_list: {
-    height: 50,
+    width: 200,
+    height: 40,
 
     borderColor: 'rgba(100, 100, 100, 0.8)',
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     borderStyle: 'solid',
-    fontFamily: 'GangwonEduAll-OTFLight'
+
+    display: 'flex',
+    justifyContent: 'center',
+    // alignItems: 'center',
+
+    paddingLeft: 23,
+  },
+  bible_list__selected: {
+    backgroundColor: 'rgba(88, 87, 126, 0.5)',
+
+    borderColor: 'transparent',
+  },
+  bible_list_text: {
+
+    fontFamily: 'GangwonEduAll-OTFLight',
+    fontSize: 15,
     // ':hover': {
     //   backgroundColor: 'black',
     // },
-  }
+  },
+  bible_list_text__selected: {
+    color: 'white',
+  },
 });
